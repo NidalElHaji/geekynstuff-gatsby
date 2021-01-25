@@ -11,7 +11,7 @@ module.exports = {
       options: {
         typeName: `WPGraphql`,
         fieldName: `wpcontent`,
-        url: `http://geekynstuff-headless.local/graphql`,
+        url: `http://geekynstuff.000webhostapp.com/graphql`,
       },
     },
     {
