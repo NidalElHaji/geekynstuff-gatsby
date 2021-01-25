@@ -40,7 +40,7 @@ export const Wrapper = styled.div`
           border-right: solid 5px ${COLORS.PRIMARY};
         }
         .role {
-          padding: 1rem 1.5rem;
+          padding: 0.5rem 1rem;
         }
       }
     }

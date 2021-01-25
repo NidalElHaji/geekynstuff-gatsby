@@ -16,9 +16,10 @@ const CollectableTemplate =({ data: { wpcontent: { collectable: { types: { edges
                 <div className="collectable-container">
                     <div className="collectable-image">
                         <Image fluid={ Collectable.images.imageOne.imageFile.childImageSharp.fluid } altText={ Collectable.images.imageOne.altText }/>
-                        <div className="types">
+
+                        <div className="roles">
                             { types.map(({ node: type }) => (
-                                <div className="type">{ type.name }</div>
+                                <div className="role">{ type.name }</div>
                             ))}
                         </div>
                     </div>
