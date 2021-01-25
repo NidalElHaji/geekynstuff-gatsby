@@ -26,7 +26,9 @@ const CollectableTemplate =({ data: { wpcontent: { collectable: { types: { edges
                         <h2>{ Collectable.name }</h2>
                         <h3><span>{ Collectable.franchise } - </span>{ Collectable.brand }</h3>
                         <p className="description">{ Collectable.description }</p>
-                        <p className="info"><strong>Info</strong>{`estimatePrice: € ${Collectable.estimatePrice}`}{" "}{`dimensions: ${Collectable.dimensions}`}{" "} {`year ${Collectable.year}`}</p>
+                        <p className="info"><strong>estimatePrice:</strong>{` €${Collectable.estimatePrice}`}</p>
+                        <p className="info"><strong>dimensions:</strong>{` ${Collectable.dimensions}`}</p>
+                        <p className="info"><strong>year:</strong>{` ${Collectable.year}`}</p>
                     </div>
                 </div>
                 <div className="collectable-pictures">
