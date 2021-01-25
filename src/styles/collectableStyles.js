@@ -7,8 +7,8 @@ export const Wrapper = styled.div`
   margin-top: 100px;
   .collectable-container {
     display: flex;
-    margin: 3rem auto;
-    width: 90%;
+    margin: 0 auto;
+    width: 64.45vw;
     background-color: ${COLORS.GREY};
     @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
       flex-direction: column;
@@ -30,11 +30,11 @@ export const Wrapper = styled.div`
         flex-direction: column;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        color: ${COLORS.SECONDARY};
+        color: ${COLORS.TERTIARY};
         font-family: ${FONT_FAMILIES.TITLE};
         text-transform: uppercase;
         background-color: ${COLORS.GREY};
-        border-right: solid 15px ${COLORS.SECONDARY};
+        border-right: solid 15px ${COLORS.TERTIARY};
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           color: ${COLORS.PRIMARY};
           border-right: solid 5px ${COLORS.PRIMARY};
