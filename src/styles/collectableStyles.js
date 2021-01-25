@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
       height: 40vw;
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         height: 90vw;
-        width: 90vw;
+        width: 64.45vw;
         border-bottom: solid 15px ${COLORS.PRIMARY};
       }
       .roles {
