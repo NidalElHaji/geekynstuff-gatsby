@@ -1,0 +1,125 @@
+query HomePageQuery {
+    page(id: "home", idType: URI) {
+        HomeMeta {
+            homePageHeaderTitle
+            homePageHeaderPicture {
+                altText
+            }
+            homePageHeaderDescription
+            homePageDescription
+            homePageCollectablesDisplay {
+                ... on Collectable {
+                    id
+                    Collectable {
+                        name
+                        images {
+                            imageOne {
+                                altText
+                            }
+                        }
+                        brand
+                    }
+                }
+            }
+        }
+    }
+}
+
+query AboutUsPageQuery {
+    page(id: "about-us", idType: URI) {
+        AboutUsMeta {
+            aboutUsHeaderPicture {
+                altText
+            }
+            aboutUsPageDescription
+        }
+    }
+}
+
+query ContactPageQuery {
+    page(id: "contact", idType: URI) {
+        ContactMeta {
+            contactPageHeaderPicture {
+                altText
+            }
+            contactPageDescription
+            contactPageAddress
+            contactPageCity
+            contactPageZipCode
+            contactPageEmail
+            contactPagePhone
+            contactPageLatitude
+            contactPageLongitude
+        }
+    }
+}
+
+query CollectablesPageQuery {
+    page(id: "collectables", idType: URI) {
+        CollectablesMeta {
+            collectablesPageHeaderPicture {
+                altText
+            }
+            collectablesPageDescription
+        }
+    }
+}
+
+query AllCollectablesQuery {
+    collectables {
+        edges {
+            node {
+                Collectable {
+                    name
+                    images {
+                        imageOne {
+                            altText
+                        }
+                    }
+                    brand
+                }
+            }
+        }
+    }
+}
+
+query GenericCollectableQuery {
+    collectables (id: "$id", idType: DATABASE_ID) {
+        types {
+            edges {
+                node {
+                    name
+                }
+            }
+        }
+        Collectable {
+            name
+            images {
+                imageOne {
+                    altText
+                }
+                imageTwo {
+                    altText
+                }
+                imageThree {
+                    altText
+                }
+                imageFour {
+                    altText
+                }
+                imageFive {
+                    altText
+                }
+                imageSix {
+                    altText
+                }
+            }
+            franchise
+            brand
+            description
+            estimateP10rice
+            dimensions
+            year
+        }
+    }
+}
